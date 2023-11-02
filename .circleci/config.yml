@@ -31,7 +31,7 @@ jobs:
             git config --global user.email "dhruvshah.dms@gmail.com"
             git config --global user.name "dhruvmshah"
             pwd
-            cd manifest
+            cd CloudOps-Week4-kube_manifest
             pwd
             echo $TAG
             sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yaml
