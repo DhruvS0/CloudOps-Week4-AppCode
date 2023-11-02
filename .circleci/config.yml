@@ -27,7 +27,7 @@ jobs:
           command: |
             TAG=$CIRCLE_BUILD_NUM
             ((TAG--))
-            git clone https://github.com/DhruvS0/CloudOps-Week4-kube_manifest
+            git clone https://github.com/DhruvS0/CloudOps-Week4-kube_manifest.git
             git config --global user.email "dhruvshah.dms@gmail.com"
             git config --global user.name "dhruvmshah"
             pwd
