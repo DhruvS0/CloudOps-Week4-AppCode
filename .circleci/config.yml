@@ -34,7 +34,7 @@ jobs:
             cd CloudOps-Week4-kube_manifest
             pwd
             echo $TAG
-            sed -i "s/build-.*/build-$TAG/g" /home/circleci/project/CloudOps-Week4-kube_manifest/manifest/deployment.yaml
+            sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yaml
             cat manifest/deployment.yaml
             git add .
             git commit -m "new build with imgTag build-$TAG"
