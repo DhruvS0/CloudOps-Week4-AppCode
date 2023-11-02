@@ -12,9 +12,9 @@ jobs:
           command: |
             version="build-$CIRCLE_BUILD_NUM"
             echo $version
-            docker build -t dhruvshah/todo-app:$version .
+            docker build -t dhruvmshah/todo-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push dhruvshah/todo-app:$version
+            docker push dhruvmshah/todo-app:$version
 
   Update_manifest:
     docker:
@@ -29,7 +29,7 @@ jobs:
             ((TAG--))
             git clone https://github.com/DhruvS0/CloudOps-Week4-kube_manifest
             git config --global user.email "dhruvshah.dms@gmail.com"
-            git config --global user.name "dhruvshah"
+            git config --global user.name "dhruvmshah"
             pwd
             cd kube_manifest
             pwd
